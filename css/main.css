@@ -1,0 +1,57 @@
+hr {
+  width: 100%;
+}
+
+.introBlurb {
+
+  font-size: 16px;
+  margin: 60px 0;
+  color: #797979;
+}
+
+.nav {
+  text-align: right;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 75px;
+
+}
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline-block;
+
+}
+
+.header {
+   font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+#name {
+  display: inline-block;
+  margin-right: 40px;
+  color: #686868;
+
+
+}
+.chloe-img {
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  margin-left: 28px;
+
+}
+
+.verticallyCenter {
+  display: flex;
+  align-items: center;
+
+}
+
+@media (max-width: 767px) {
+}
