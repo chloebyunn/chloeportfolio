@@ -32,6 +32,13 @@ hr {
   /*font-family: 'Open Sans', sans-serif;*/
 }
 
+
+.heading {
+  font-family: 'Quicksand', sans-serif;
+  color: #686868;
+}
+
+
 #name {
   display: inline-block;
   margin-right: 40px;
@@ -72,4 +79,68 @@ hr {
 }
 
 @media (max-width: 767px) {
+}
+.square {
+  height: 220px;
+  border-radius: 12px;
+}
+.square1 {
+  background-color: #FFE6E4;
+}
+
+.square2 {
+  background-color: #FFF5D6;
+
+}
+.square3 {
+  background-color: #E8FCFF;
+
+
+}
+.square4 {
+  background-color: #E4FFF4;
+
+}
+
+.center-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#CIBC-img {
+  border-radius: 12px;
+  height: 130px;
+}
+
+#QTS-img {
+  border-radius: 12px;
+  height: 150px;
+
+}
+#veeva-img {
+  border-radius: 12px;
+  height: 25%;
+
+}
+
+.hire-me {
+  font-family: 'Quicksand', sans-serif;
+  color: #686868;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-row {
+  margin-top: 30px;
+}
+
+@media (max-width: 860px) {
+  .square {
+    margin: 10px 0;
+  }
+  .bottom-row {
+    margin-top:0;
+  }
 }
