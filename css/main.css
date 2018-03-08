@@ -46,19 +46,19 @@ hr {
 
 
 }
+
 .chloe-img {
   display: inline-block;
   width: 50px;
   height: auto;
   margin-left: 28px;
-
 }
 
 .vertically-center {
   display: flex;
   align-items: center;
-
 }
+
 .nav-item {
   padding: 3px 5px 10px 5px;
   border-bottom: 6px solid #F1F1F1;
@@ -75,15 +75,13 @@ hr {
   border-color: #FFE6E4;
   padding-bottom: 2px;
   transition: 0.15s padding-bottom;
-
 }
 
-@media (max-width: 767px) {
-}
 .square {
   height: 220px;
   border-radius: 12px;
 }
+
 .square1 {
   background-color: #FFE6E4;
 }
@@ -99,29 +97,27 @@ hr {
 }
 .square4 {
   background-color: #E4FFF4;
-
 }
 
 .center-imgs {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
 #CIBC-img {
   border-radius: 12px;
-  height: 130px;
+  width: 130px;
 }
 
 #QTS-img {
   border-radius: 12px;
-  height: 150px;
-
+  width: 130px;
 }
+
 #veeva-img {
   border-radius: 12px;
-  height: 25%;
-
+  width: 190px;
 }
 
 .hire-me {
@@ -136,7 +132,7 @@ hr {
   margin-top: 30px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 767px) {
   .square {
     margin: 10px 0;
   }
