@@ -37,6 +37,7 @@ hr {
   font-family: 'Quicksand', sans-serif;
   color: #686868;
   font-size: 24px;
+  letter-spacing: 5px;
 }
 
 
@@ -44,6 +45,7 @@ hr {
   display: inline-block;
   margin-right: 40px;
   color: #686868;
+  letter-spacing: 4px;
 
 
 }
