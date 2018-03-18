@@ -36,6 +36,7 @@ hr {
 .heading {
   font-family: 'Quicksand', sans-serif;
   color: #686868;
+  font-size: 24px;
 }
 
 
@@ -115,7 +116,7 @@ hr {
   width: 130px;
 }
 
-#veeva-img {
+#Veeva-img {
   border-radius: 12px;
   width: 190px;
 }
@@ -139,4 +140,15 @@ hr {
   .bottom-row {
     margin-top:0;
   }
+}
+
+.new-section {
+  padding-top:50px;
+}
+
+.square:hover {
+  background-color: #777777;
+}
+.square:hover #CIBC-img, .square:hover #Veeva-img, .square:hover #QTS-img {
+  opacity: 0.15;
 }
