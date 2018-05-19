@@ -92,11 +92,19 @@
 #circle4 {
   bottom: 60px;
   right: -30px;
+  -webkit-animation: float-to-left 18s 2s infinite;
+  -moz-animation:    float-to-left 18s 2s infinite;
+  -o-animation:      float-to-left 18s 2s infinite;
+  animation:         float-to-left 18s 2s infinite;
 }
 
 #circle5 {
   bottom: -30px;
   left: -30px;
+  -webkit-animation: float-to-up-right 20s 4s infinite;
+  -moz-animation:    float-to-up-right 20s 4s infinite;
+  -o-animation:      float-to-up-right 20s 4s infinite;
+  animation:         float-to-up-right 20s 4s infinite;
 }
 
 @keyframes float-to-top-right {
@@ -127,21 +135,49 @@
   }
 }
 
+@keyframes float-to-up-right {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  30% {
+    transform: translateX(100px) translateY(-100px);
+  }
+
+  60%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes float-to-left {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  30% {
+    transform: translateX(-150px) translateY(-50px);
+  }
+
+  60%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
 @keyframes rotate-slide {
   0% {
     transform: translateX(0) translateY(0);
   }
 
   20% {
-    transform: translateX(200px) translateY(300px) rotate(90deg);
+    transform: translateX(50px) translateY(300px) rotate(90deg);
   }
 
   40% {
-    transform: translateX(-200px) translateY(200px) rotate(0);
+    transform: translateX(-200px) translateY(200px);
   }
 
   60% {
-    transform: translateX(0) translateY(0) rotate(45deg);
+    transform: translateX(0) translateY(0) rotate(0);
   }
 
   65%, 100% {
