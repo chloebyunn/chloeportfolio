@@ -1,4 +1,4 @@
-body {
+html {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
@@ -38,8 +38,8 @@ body {
 .nav {
   text-align: right;
   width: 100%;
-  margin-top: 35px;
-  margin-bottom: 75px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
 }
 .nav-list {
@@ -50,20 +50,19 @@ body {
 
 .nav-item {
   display: inline-block;
-  padding: 3px 5px 10px 5px;
-  border-bottom: 6px solid #F1F1F1;
-  color: #686868;
+  color: #797979;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: border-color 0.15s;
 }
 
 .nav-class {
-  margin-left: 45px;
   padding-bottom:3px;
 }
 
 .nav-item:hover {
   border-color: #FFE6E4;
-  padding-bottom: 2px;
-  transition: 0.15s padding-bottom;
 }
 
 .chloe-img {
