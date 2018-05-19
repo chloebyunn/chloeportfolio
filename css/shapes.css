@@ -1,0 +1,156 @@
+.circle, .rectangle {
+  position: absolute;
+  border: 2px solid;
+  z-index: -1;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.rectangle {
+  border-radius: 12px;
+}
+
+.shape--pink {
+  border-color: #FFE6E4;
+}
+
+.shape--yellow {
+  border-color: #FFF5D6;
+}
+
+.shape--blue {
+  border-color: #E4F8FB;
+}
+
+.shape--teal {
+  border-color: #E0FBF0;
+}
+
+.circle--md {
+  width: 100px;
+  height: 100px;
+}
+
+.circle--lg {
+  width: 150px;
+  height: 150px;
+}
+
+.circle--xl {
+  width: 200px;
+  height: 200px;
+}
+
+.rectangle--tall-lg {
+  width: 100px;
+  height: 250px;
+}
+
+.rectangle--wide-lg {
+  width: 250px;
+  height: 100px;
+}
+
+#circle1 {
+  left: -50px;
+  -webkit-animation: float-to-top-right 20s infinite;
+  -moz-animation:    float-to-top-right 20s infinite;
+  -o-animation:      float-to-top-right 20s infinite;
+  animation:         float-to-top-right 20s infinite;
+}
+
+#circle2 {
+  top: 10px;
+  left: 250px;
+}
+
+#circle3 {
+  top: -120px;
+  right: 300px;
+  -webkit-animation: float-to-right 15s 5s infinite;
+  -moz-animation:    float-to-right 15s 5s infinite;
+  -o-animation:      float-to-right 15s 5s infinite;
+  animation:         float-to-right 15s 5s infinite;
+}
+
+#rectangle1 {
+  top: 100px;
+  right: 60px;
+  -webkit-animation: rotate-slide 30s infinite;
+  -moz-animation:    rotate-slide 30s infinite;
+  -o-animation:      rotate-slide 30s infinite;
+  animation:         rotate-slide 30s infinite;
+}
+
+#rectangle2 {
+  bottom: -120px;
+  right: 40px;
+}
+
+#circle4 {
+  bottom: 60px;
+  right: -30px;
+}
+
+#circle5 {
+  bottom: -30px;
+  left: -30px;
+}
+
+@keyframes float-to-top-right {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  30% {
+    transform: translateX(300px) translateY(-100px);
+  }
+
+  60%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes float-to-right {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  30% {
+    transform: translateX(150px) translateY(50px);
+  }
+
+  60%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes rotate-slide {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  20% {
+    transform: translateX(200px) translateY(300px) rotate(90deg);
+  }
+
+  40% {
+    transform: translateX(-200px) translateY(200px) rotate(0);
+  }
+
+  60% {
+    transform: translateX(0) translateY(0) rotate(45deg);
+  }
+
+  65%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  #rectangle1 {
+    right: -50px;
+  }
+}
