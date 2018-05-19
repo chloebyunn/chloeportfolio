@@ -43,6 +43,11 @@
   height: 200px;
 }
 
+.rectangle--tall-md {
+  width: 100px;
+  height: 150px;
+}
+
 .rectangle--tall-lg {
   width: 100px;
   height: 250px;
@@ -95,6 +100,15 @@
   -moz-animation:    float-to-left 20s 7s infinite;
   -o-animation:      float-to-left 20s 7s infinite;
   animation:         float-to-left 20s 7s infinite;
+}
+
+#rectangle3 {
+  bottom: 50px;
+  left: 250px;
+  -webkit-animation: float-to-left 15s 3s infinite;
+  -moz-animation:    float-to-left 15s 3s infinite;
+  -o-animation:      float-to-left 15s 3s infinite;
+  animation:         float-to-left 15s 3s infinite;
 }
 
 #circle4 {
@@ -208,7 +222,7 @@
 }
 
 @media (max-width: 800px) {
-  #rectangle1 {
-
+  #circle4 {
+    right: 0;
   }
 }
