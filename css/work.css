@@ -122,6 +122,14 @@ body {
 }
 
 @media (max-width: 767px) {
+  .logo {
+    width: 70px;
+  }
+
+  .nav-item {
+    margin-top: 0;
+  }
+  
   .work_title {
     font-size: 25px;
   }
