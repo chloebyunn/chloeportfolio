@@ -12,14 +12,21 @@ body {
   position: relative;
 }
 
+.logo {
+  width: 90px;
+}
+
 .nav {
-  text-align: right;
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 50px;
-
+  margin-bottom: 20px;
 }
+
 .nav-list {
+  flex: 1;
+  text-align: right;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -32,6 +39,7 @@ body {
   border: 2px solid transparent;
   border-radius: 12px;
   transition: border-color 0.15s;
+  margin-top: 10px;
 }
 
 .nav-class {
@@ -112,7 +120,6 @@ body {
   text-decoration: none;
 
 }
-
 
 @media (max-width: 767px) {
   .work_title {

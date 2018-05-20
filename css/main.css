@@ -15,6 +15,10 @@ a:link, a:visited, a:active {
   position: relative;
 }
 
+.new-section {
+  padding-top: 50px;
+}
+
 .intro__heading {
   text-align: center;
   font-weight: 700;
@@ -29,10 +33,6 @@ a:link, a:visited, a:active {
   color: #797979;
 }
 
-.new-section {
-  padding-top: 50px;
-}
-
 .intro__desc {
   max-width: 370px;
   margin: 30px auto;
@@ -43,14 +43,22 @@ a:link, a:visited, a:active {
   line-height: 1.5em;
 }
 
+.logo {
+  width: 90px;
+}
+
 .nav {
-  text-align: right;
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
 }
+
 .nav-list {
+  flex: 1;
+  text-align: right;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -63,6 +71,7 @@ a:link, a:visited, a:active {
   border: 2px solid transparent;
   border-radius: 12px;
   transition: border-color 0.15s;
+  margin-top: 10px;
 }
 
 .nav-class {
@@ -159,12 +168,25 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 991px) {
-
-}
-
 @media (max-width: 767px) {
   .square {
+    margin-top: 20px;
+  }
+
+  .intro__heading {
+    font-size: 2em;
+    line-height: 0.9em;
+  }
+
+  .new-section {
+    padding-top: 0;
+  }
+
+  .chloe-img {
+    width: 120px;
+  }
+
+  .intro__desc {
     margin-top: 20px;
   }
 }
