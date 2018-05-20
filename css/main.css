@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 .header {
   position: relative;
 }
@@ -98,11 +102,13 @@ body {
 .block__heading {
   color: #4a4a4a;
   margin-bottom: 5px;
+  text-decoration: none;
 }
 
 .block__desc {
   margin-top: 0;
   color: #797979;
+  text-decoration: none;
 }
 
 .square {

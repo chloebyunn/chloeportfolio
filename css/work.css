@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 
+
 .header {
   position: relative;
 }
@@ -106,6 +107,12 @@ body {
 .skills_content {
   line-height: 25px;
 }
+
+.no-underline {
+  text-decoration: none;
+
+}
+
 
 @media (max-width: 767px) {
   .work_title {
