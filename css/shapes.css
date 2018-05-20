@@ -222,6 +222,10 @@
 }
 
 @media (max-width: 800px) {
+  #circle1 {
+    left: -100px;
+  }
+
   #circle2, #rectangle1 {
     display: none;
   }
