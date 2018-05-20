@@ -135,7 +135,7 @@
   }
 
   30% {
-    transform: translateX(300px) translateY(-100px);
+    transform: translateX(250px) translateY(-100px);
   }
 
   60%, 100% {
