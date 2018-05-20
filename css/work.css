@@ -51,13 +51,11 @@ body {
 }
 
 .grey_banner {
-
   display: flex;
   justify-content: center;
   align-items: center;
   height: 250px;
   background-color: #F3F3F3;
-
 }
 
 #qts-img {
@@ -95,8 +93,8 @@ body {
 
 .work_period {
   margin-top: 8px;
-
 }
+
 .skills1 {
   display: inline-block;
   padding-right: 15px;
@@ -119,7 +117,64 @@ body {
 
 .no-underline {
   text-decoration: none;
+}
 
+.next-page {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+}
+
+.next-page:hover .arrow-right {
+  transform: translateX(5px);
+  border-left-color: #BEFAE7;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #9D9D9D;
+  margin-left: 5px;
+  transition: transform 0.15s;
+}
+
+.arrow-text {
+  font-weight: 700;
+  color: #9D9D9D;
+}
+
+.prev-page {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #9D9D9D;
+  margin-right: 5px;
+  transition: transform 0.15s;
+}
+
+.arrow-text-prev {
+  font-weight: 700;
+  color: #9D9D9D;
+}
+
+.prev-page:hover .arrow-left {
+  transform: translateX(-5px);
+  border-right-color: #FEE289;
 }
 
 @media (max-width: 767px) {
