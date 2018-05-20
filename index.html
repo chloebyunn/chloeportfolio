@@ -4,111 +4,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+    <link href="css/shapes.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   </head>
   <body>
     <header class="header container">
       <nav class="nav">
         <ul class="nav-list" >
-          <a href="www.google.ca" class="nav-class"><li class="nav-item">Work</li></a>
-          <a href="www.google.ca" class="nav-class"><li class="nav-item">Project</li></a>
+          <a href="www.google.ca" class="nav-class"><li class="nav-item">Resume</li></a>
           <a href="www.google.ca" class="nav-class"><li class="nav-item">Contact</li></a>
-
         </ul>
       </nav>
 
-      <div class="row"> <!-- row of name and pic and line -->
-        <div class="col-lg-4 col-md-5 col-sm-7 vertically-center">
+      <div id="circle1" class="circle circle--lg shape--yellow"></div>
+      <div id="circle2" class="circle circle--md shape--blue"></div>
+      <div id="circle3" class="circle circle--lg shape--teal"></div>
+      <div id="rectangle1" class="rectangle rectangle--tall-lg shape--pink"></div>
+      <div id="rectangle2" class="rectangle rectangle--wide-lg shape--yellow"></div>
+      <div id="rectangle3" class="rectangle rectangle--tall-md shape--teal"></div>
+      <div id="circle4" class="circle circle--lg shape--blue"></div>
+      <div id="circle5" class="circle circle--xl shape--pink"></div>
 
-          <h1 id="name">Chloe Byun</h1>
+      <h1 class="intro__heading">
+        <span class="text-minor">Hi there, I'm</span>
+        <br>Chloe Byun
+      </h1>
 
-          <img class="chloe-img" src="img/chloe.png" alt="Chloe image">
+      <img class="chloe-img" src="img/chloe.svg" alt="Illustration of Chloe Byun">
 
-        </div>
-        <div class="col-lg-8 col-md-7 col-sm-5 vertically-center">
-          <hr> <!-- maybe inside a div-->
-        </div>
-      </div>
-
-
-      <h2 class="introBlurb"> Hello! Thanks for visiting my website! <br>
-        I'm a student at the University of Waterloo, learning about the breadths and depths of design!<br>
-        Take a look around and leave me a message :)
+      <h2 class="intro__desc"> Thanks for visiting my website :)<br>
+        Take a look around, view my <a href="#" class="text-link">resume</a>, or leave me a message!
       </h2>
-
     </header>
 
     <section class="container">
       <div class="row new-section">
-        <div class="col-md-4">
-          <h3 class="heading">Work</h3>
+        <div class="col-lg-3">
+          <h3 class="section-heading">Work</h3>
         </div>
-        <div class="col-md-8">
+
+        <div class="col-lg-9">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4 block">
               <div class="square square1 center-imgs">
                 <img id="CIBC-img" src="img/cibc.png" alt="CIBC img">
               </div>
-
+              <h3 class="block__heading">CIBC</h3>
+              <p class="block__desc">Business Systems Analyst</p>
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-4 block">
               <div class="square square2 center-imgs">
                 <img id="Veeva-img" src="img/veeva.png" alt="Veeva img">
               </div>
+              <h3 class="block__heading">Veeva Systems</h3>
+              <p class="block__desc">QA Engineer</p>
             </div>
-          </div>
-          <div class="row bottom-row">
-            <div class="col-md-6">
+
+            <div class="col-md-4 block">
               <div class="square square3 center-imgs">
                 <img id="QTS-img" src="img/qts.png" alt="QTS img">
               </div>
-
-            </div>
-            <div class="col-md-6">
-              <div class="square square4 center-imgs">
-                <h4 class="hire-me">Hire me!</h4>
-              </div>
+              <h3 class="block__heading">QuickTapSurvey</h3>
+              <p class="block__desc">QA Analyst</p>
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="row new-section">
-
-        <div class="col-md-4">
-          <h3 class="heading">Projects</h3>
+        <div class="col-lg-3">
+          <h3 class="section-heading">Projects</h3>
         </div>
-        <div class="col-md-8">
+
+        <div class="col-lg-9">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4 block">
               <div class="square square2 center-imgs">
-          
               </div>
-
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-4 block">
               <div class="square square3 center-imgs">
-
-              </div>
-            </div>
-          </div>
-          <div class="row bottom-row">
-            <div class="col-md-6">
-              <div class="square square4 center-imgs">
-
-              </div>
-
-            </div>
-            <div class="col-md-6">
-              <div class="square square1 center-imgs">
-
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
-
+    <footer>
+      Designed and developed by Chloe Byun
+    </footer>
+  </body>
 </html>
