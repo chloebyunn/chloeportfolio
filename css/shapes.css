@@ -228,10 +228,14 @@
 
   #circle3 {
     top: 30px;
-    right: 150px;
+    right: 180px;
   }
 
   #circle4 {
     right: 0;
+  }
+
+  #rectangle3 {
+    top: 120px;
   }
 }

@@ -1,6 +1,6 @@
 html {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .header {
@@ -67,7 +67,7 @@ html {
 
 .chloe-img {
   display: block;
-  width: 120px;
+  width: 150px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
