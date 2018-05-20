@@ -61,13 +61,14 @@ body {
 }
 
 #qts-img {
-  width: 500px;
+  width: 450px;
   max-width: 80%;
   height: auto;
 }
 
 #veeva-img {
   width: 330px;
+  max-width: 80%;
 }
 
 #CIBC-img {
@@ -129,7 +130,7 @@ body {
   .nav-item {
     margin-top: 0;
   }
-  
+
   .work_title {
     font-size: 25px;
   }
