@@ -226,14 +226,14 @@
     left: -100px;
   }
 
-  #circle2, #rectangle1 {
+  #circle2, #rectangle1, #rectangle2, #circle3{
     display: none;
   }
 
-  #circle3 {
-    top: 30px;
+  /* #circle3 {
+    top: 5px;
     right: 180px;
-  }
+  } */
 
   #circle4 {
     right: 0;
