@@ -94,12 +94,12 @@
 }
 
 #rectangle2 {
-  bottom: -120px;
+  bottom: -70px;
   right: 40px;
-  -webkit-animation: float-to-left 20s 7s infinite;
-  -moz-animation:    float-to-left 20s 7s infinite;
-  -o-animation:      float-to-left 20s 7s infinite;
-  animation:         float-to-left 20s 7s infinite;
+  -webkit-animation: rotate-ccw 20s 7s infinite;
+  -moz-animation:    rotate-ccw 20s 7s infinite;
+  -o-animation:      rotate-ccw 20s 7s infinite;
+  animation:         rotate-ccw 20s 7s infinite;
 }
 
 #rectangle3 {
@@ -221,16 +221,30 @@
   }
 }
 
+@keyframes rotate-ccw {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  30% {
+    transform: translateX(50px) translateY(-350px) rotate(90deg);
+  }
+
+  60%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
 @media (max-width: 800px) {
   #circle1 {
     left: -100px;
   }
 
-  #circle2, #rectangle1, #rectangle2, #circle3{
+  #circle2, #rectangle1, #rectangle2, #circle3 {
     display: none;
   }
-
-  /* #circle3 {
+/*
+  #circle3 {
     top: 5px;
     right: 180px;
   } */
