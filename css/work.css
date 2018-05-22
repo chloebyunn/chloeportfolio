@@ -197,4 +197,17 @@ body {
   .skills1, .skills2 {
     font-size: 14px;
   }
+
+  .prev-page {
+    padding-left: 15px;
+    position: static;
+    float:left;
+
+
+  }
+  .next-page {
+    padding-right: 15px;
+    position: static;
+    float: right;
+  }
 }
