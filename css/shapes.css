@@ -58,6 +58,11 @@
   height: 100px;
 }
 
+.rectangle--square-md {
+  width: 150px;
+  height: 150px;
+}
+
 #circle1 {
   left: -50px;
   -webkit-animation: float-to-top-right 20s infinite;
@@ -111,6 +116,15 @@
   animation:         float-to-left 15s 3s infinite;
 }
 
+#rectangle4 {
+  bottom: -150px;
+  left: 40px;
+  -webkit-animation: float-down 25s 3s infinite;
+  -moz-animation:    float-down 25s 3s infinite;
+  -o-animation:      float-down 25s 3s infinite;
+  animation:         float-down 25s 3s infinite;
+}
+
 #circle4 {
   bottom: 60px;
   right: -30px;
@@ -128,6 +142,17 @@
   -o-animation:      float-to-up-right 20s 4s infinite;
   animation:         float-to-up-right 20s 4s infinite;
 }
+
+#circle6 {
+  bottom: -500px;
+  left: 20px;
+  -webkit-animation: float-to-top-right 20s 2s infinite;
+  -moz-animation:    float-to-top-right 20s 2s infinite;
+  -o-animation:      float-to-top-right 20s 2s infinite;
+  animation:         float-to-top-right 20s 2s infinite;
+
+}
+
 
 @keyframes float-to-top-right {
   0% {
@@ -231,6 +256,20 @@
   }
 
   60%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  40% {
+    transform: translateX(10px) translateY(300px);
+  }
+
+  65%, 100% {
     transform: translateX(0) translateY(0);
   }
 }
