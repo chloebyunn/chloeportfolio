@@ -129,10 +129,10 @@
 #circle2 {
   top: 10px;
   left: 250px;
-  -webkit-animation: float-to-bottom-left 25s 2s infinite;
-  -moz-animation:    float-to-bottom-left 25s 2s infinite;
-  -o-animation:      float-to-bottom-left 25s 2s infinite;
-  animation:         float-to-bottom-left 25s 2s infinite;
+  -webkit-animation: float-to-bottom-left 35s 2s infinite;
+  -moz-animation:    float-to-bottom-left 35s 2s infinite;
+  -o-animation:      float-to-bottom-left 35s 2s infinite;
+  animation:         float-to-bottom-left 35s 2s infinite;
 }
 
 #circle3 {
@@ -286,10 +286,14 @@
   }
 
   25% {
+    transform: translateX(-200px) translateY(100px);
+  }
+
+  50% {
     transform: translateX(-400px) translateY(200px);
   }
 
-  50%, 100% {
+  100% {
     transform: translateX(0) translateY(0);
   }
 }
