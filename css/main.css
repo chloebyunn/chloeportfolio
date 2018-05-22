@@ -1,22 +1,64 @@
-hr {
-  width: 100%;
+html {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
-.introBlurb {
+body {
+  margin: 0;
+}
 
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+}
+
+.new-section {
+  padding-top: 50px;
+}
+
+.intro__heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3em;
+  color: #4a4a4a;
+  line-height: 0.8em;
+}
+
+.text-minor {
+  font-weight: 400;
   font-size: 16px;
-  margin: 60px 0;
   color: #797979;
 }
 
+.intro__desc {
+  max-width: 370px;
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #797979;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.logo {
+  width: 90px;
+}
+
 .nav {
-  text-align: right;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin-top: 35px;
-  margin-bottom: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
+
 .nav-list {
+  flex: 1;
+  text-align: right;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -24,34 +66,136 @@ hr {
 
 .nav-item {
   display: inline-block;
-
+  color: #797979;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  transition: border-color 0.15s;
+  margin-top: 10px;
 }
 
-.header {
-   font-family: 'Quicksand', sans-serif;
-  /*font-family: 'Open Sans', sans-serif;*/
+.nav-class {
+  padding-bottom:3px;
 }
 
-#name {
-  display: inline-block;
-  margin-right: 40px;
-  color: #686868;
-
-
+.nav-item:hover {
+  border-color: #FFE6E4;
 }
+
 .chloe-img {
-  display: inline-block;
-  width: 50px;
+  display: block;
+  width: 150px;
   height: auto;
-  margin-left: 28px;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.verticallyCenter {
+.section-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #686868;
+  font-size: 30px;
+}
+
+.block {
+  cursor: pointer;
+}
+
+.block:hover .square {
+  transform: scale(1.03);
+}
+
+.block__heading, .block__desc {
+  text-align: center;
+}
+
+.block__heading {
+  color: #4a4a4a;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.block__desc {
+  margin-top: 0;
+  color: #797979;
+  text-decoration: none;
+}
+
+.square {
+  height: 220px;
+  border-radius: 12px;
+  transition: transform 0.15s;
+}
+
+.square1 {
+  border: 10px solid #FFE6E4;
+}
+
+.square2 {
+  border: 10px solid #FFF5D6;
+
+}
+.square3 {
+  border: 10px solid #E8FCFF;
+
+}
+.square4 {
+  border: 10px solid #E4FFF4;
+}
+
+.center-imgs {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
 
+#CIBC-img {
+  border-radius: 12px;
+  width: 90px;
+}
+
+#QTS-img {
+  border-radius: 12px;
+  width: 100px;
+}
+
+#Veeva-img {
+  border-radius: 12px;
+  width: 160px;
+}
+
+footer {
+  margin: 70px 0 30px 0;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
+  .nav-item {
+    margin-top: 0;
+  }
+  
+  .square {
+    margin-top: 20px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .intro__heading {
+    margin-top: 60px;
+    font-size: 2.5em;
+    line-height: 0.9em;
+  }
+
+  .new-section {
+    padding-top: 0;
+  }
+
+  .chloe-img {
+    width: 120px;
+  }
+
+  .intro__desc {
+    margin-top: 20px;
+  }
 }
