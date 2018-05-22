@@ -93,10 +93,10 @@
 #rectangle4 {
   bottom: -150px;
   left: 40px;
-  -webkit-animation: float-down 25s 3s infinite;
-  -moz-animation:    float-down 25s 3s infinite;
-  -o-animation:      float-down 25s 3s infinite;
-  animation:         float-down 25s 3s infinite;
+  -webkit-animation: float-down 35s 3s infinite;
+  -moz-animation:    float-down 35s 3s infinite;
+  -o-animation:      float-down 35s 3s infinite;
+  animation:         float-down 35s 3s infinite;
 }
 
 #rectangle6 {
@@ -120,10 +120,10 @@
 
 #circle1 {
   left: -50px;
-  -webkit-animation: float-to-top-right 20s infinite;
-  -moz-animation:    float-to-top-right 20s infinite;
-  -o-animation:      float-to-top-right 20s infinite;
-  animation:         float-to-top-right 20s infinite;
+  -webkit-animation: float-to-top-right 25s 2s infinite;
+  -moz-animation:    float-to-top-right 25s 2s infinite;
+  -o-animation:      float-to-top-right 25s 2s infinite;
+  animation:         float-to-top-right 25s 2s infinite;
 }
 
 #circle2 {
@@ -156,10 +156,10 @@
 #circle5 {
   bottom: -30px;
   left: -30px;
-  -webkit-animation: float-to-up-right 20s 4s infinite;
-  -moz-animation:    float-to-up-right 20s 4s infinite;
-  -o-animation:      float-to-up-right 20s 4s infinite;
-  animation:         float-to-up-right 20s 4s infinite;
+  -webkit-animation: float-to-up-right 30s 4s infinite;
+  -moz-animation:    float-to-up-right 30s 4s infinite;
+  -o-animation:      float-to-up-right 30s 4s infinite;
+  animation:         float-to-up-right 30s 4s infinite;
 }
 
 #circle6 {
@@ -222,7 +222,13 @@
     transform: translateX(250px) translateY(-100px);
   }
 
-  60%, 100% {
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(250px) translateY(100px);
+  }
+  100% {
     transform: translateX(0) translateY(0);
   }
 }
@@ -264,7 +270,12 @@
     transform: translateX(-150px) translateY(-50px);
   }
 
-  60%, 100% {
+  60% {
+
+    transform: translateX(-200px) translateY(-75px);
+  }
+
+  100% {
     transform: translateX(0) translateY(0);
   }
 }
