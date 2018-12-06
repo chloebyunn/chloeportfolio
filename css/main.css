@@ -148,6 +148,10 @@ a:link, a:visited, a:active {
   justify-content: center;
 }
 
+#Empire-img {
+  width: 100px;
+}
+
 #CIBC-img {
   border-radius: 12px;
   width: 90px;
