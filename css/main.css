@@ -2,6 +2,10 @@ html {
   /* overflow-x: hidden; */
 }
 
+body {
+
+}
+
 ::selection {
   background-color: #4357AD;
   color: #FFD5D0;
@@ -11,7 +15,9 @@ html {
   max-width: 1200px;
   margin: auto;
   padding: 80px 20px 20px 20px;
+
 }
+
 .container {
   max-width: 1000px;
   margin: auto;
@@ -64,14 +70,18 @@ ul {
 .nav-item {
   display: inline-block;
   font-size: 20px;
-  padding: 10px 40px 0 0;
+  margin: 10px 40px 0 0;
   color: #979797;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
  
 .nav-item:hover, a:hover{
   /* font-weight: 900; */
   color: #F76F8E;
+}
+
+.secondary-highlight {
+  display: inline-block;
 }
 
 .secondary-highlight::selection {
@@ -82,6 +92,7 @@ ul {
   font-size: 60px;
   font-weight: 700;
   padding: 50px 0;
+
 }
 
 .main-display {
@@ -109,6 +120,8 @@ ul {
   align-items: center;
   justify-content: center;
   transition: all 0.35s ease-in-out;
+  box-shadow: 4px 4px 4px #ededed;
+
 
 }
 
@@ -177,5 +190,12 @@ ul {
   .container {
     padding-left:8px;
     padding-right: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-item {
+    font-size: 16px;
+    margin-right: 20px;
   }
 }

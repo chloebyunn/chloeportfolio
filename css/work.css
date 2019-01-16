@@ -12,7 +12,8 @@ p {
 }
 
 .go-back-home {
-  float: right;
+  /* float: right; */
+  /* display: block; */
   position: absolute;
   right: 0;
   padding: 0;
