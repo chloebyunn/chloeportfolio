@@ -6,7 +6,7 @@ var options = {
     backSpeed: 50,
     smartBackspace: true,
     fadeOutClass: 'typed-fade-out',
-    // startDelay: 2110,
+    startDelay: 100, 
     backDelay: 1400,
     // showCursor: 
   }
