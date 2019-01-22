@@ -6,9 +6,9 @@ var options = {
     backSpeed: 50,
     smartBackspace: true,
     fadeOutClass: 'typed-fade-out',
-    startDelay: 100, 
+    startDelay: 500, 
     backDelay: 1400,
-    // showCursor: 
+    // showCursor: false,
   }
   
   var typed = new Typed(".secondary-highlight", options);
