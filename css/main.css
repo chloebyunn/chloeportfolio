@@ -29,6 +29,11 @@ a:visited {
   color: inherit;
 }
 
+h2 {
+  font-size: 60px;
+  word-wrap: break-word;
+}
+
 h3, h4 {
   margin: 0;
 }
@@ -118,8 +123,6 @@ ul {
   justify-content: center;
   transition: all 0.35s ease-in-out;
   box-shadow: 4px 4px 4px #ededed;
-
-
 }
 
 .nav-item:hover {
@@ -173,15 +176,15 @@ ul {
 }
 
 @media (max-width: 778px) {
-  .intro-blurb {
-    font-size: 45px;
+
+  h2, .secondary-highlight, .intro-blurb {
+    font-size: 50px;
   }
 
   .work-square {
     width: 100%;
     margin: auto;
     margin-bottom: 40px;
-
   }
 
   .container {
@@ -191,6 +194,9 @@ ul {
 }
 
 @media (max-width: 350px) {
+  h2, .secondary-highlight, .intro-blurb, .work-duration {
+    font-size: 30px;
+  }
   .nav-item {
     font-size: 16px;
     margin-right: 20px;
