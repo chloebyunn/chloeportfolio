@@ -1,213 +1,100 @@
-html {
-  overflow-x: hidden;
-}
-
-::selection {
-  background-color: #4357AD;
-  color: #FFD5D0;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 80px 20px 20px 20px;
-
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
-
-h2 {
-  font-size: 60px;
-  word-wrap: break-word;
-  /* height: 200px; */
-  margin: 0;
-}
-
-h3, h4 {
-  margin: 0;
-}
-
-h3 {
-  font-weight: lighter;
-  margin-top: 15px;
-}
-
-h4 {
-  font-weight: lighter;
-  color: #979797;
-}
-
-.grey-color {
-  color: #979797;
-}
-
-.pink-color {
-  color: #F76F8E;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list {
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid #979797;
-  position: relative;
-}
-
-.nav-item {
-  display: inline-block;
-  font-size: 20px;
-  margin: 10px 40px 0 0;
-  color: #979797;
-  transition: all 0.3s ease-in-out;
-}
- 
-.nav-item:hover, a:hover{
-  /* font-weight: 900; */
-  color: #F76F8E;
-}
-
-.secondary-highlight {
-  display: inline-block;
-  font-size: 65px;
-  min-height: 75px;
-}
-
-.secondary-highlight::selection {
-  color: #44FF6E;
-}
-
-.intro-blurb {
-  font-size: 70px;
-  font-weight: 700;
-  padding: 50px 0 0 0;
-}
-
-.main-display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10%;
-}
-
-.work-square {
-  margin: 20px 35px 45px 20px;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+.grid-container {
+    display: grid;
+    grid-template-columns: [left-margin] 1fr
+                           [left-blocks] 420px
+                           [middle-space] 38px 
+                           [right-blocks] 420px 
+                           [right-margin] 1fr;
+    grid-template-rows: [chloe-pic-start] 135px 
+                        [intro-start] 130px 
+                        [intro-end] 75px 
+                        [work-block-1-start] 120px 
+                        [chloe-pic-end] 40px 
+                        [work-block-2-start] 120px 
+                        [work-block-1-end] 40px 
+                        [work-block-3-start] 120px 
+                        [work-block-2-end] 40px 
+                        [work-block-4-start] 120px 
+                        [work-block-3-end] 40px 
+                        [work-block-5-start] 120px 
+                        [work-block-4-end]160px  /* set this to 40px when adding a new block*/
+                        [work-block-5-end] 120px;
+    /* grid-template-areas: ". . . pic ."
+                         ". blurb . pic ."
+                         ". . . pic ."
+                         ". work-1 . pic ."
+                         ". work-1 . . ."
+                         ". work-1 . work-2 ."
+                         ". . . work-2 ."
+                         ". work-3 . work-2 ."
+                         ". work-3 . . ."
+                         ". work-3 . work-4 ."
+                         ". . . work-4 ."
+                         ". work-5 . work-4 ."
+                         ". work-5 . . . "
+                         ". work-5 . . ." */
 
 }
 
-.img-square { 
-  height: 300px;
-  /* width: 420px; */
-  width: 100%;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.35s ease-in-out;
-  box-shadow: 4px 4px 4px #ededed;
+nav {
+    height: 140px;
 }
 
-.nav-item:hover {
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05); 
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+.chloe-pic {
+  grid-column-start: right-blocks;
+  grid-column-end: right-margin;
+  grid-row-start: chloe-pic-start;
+  grid-row-end: chloe-pic-end;
+  background-image: url(../img/chloe-pic.png);
+  border-radius: 20px;
+  background-position: center; 
+  background-size: 100% auto
 }
 
-.work-square:hover .img-square{
-  -moz-transform: scale(1.05);
-  -webkit-transform: scale(1.05); 
-  -o-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+.intro {
+  grid-column-start: left-blocks;
+  grid-column-end: middle-space;
+  grid-row-start: intro-start;
+  grid-row-end: intro-end;
 }
 
-#Empire-square {
-  background-image: linear-gradient(to bottom right, #FBCCD7, #FFF9E8);
+.work {
+  border-radius: 30px;
+  box-shadow: 0px 0px 180076;
+  box-shadow: 0 0 30px rgba(24, 0, 118, 0.1)
 }
 
-#empire-logo {
-  width: 150px;
+.one {
+  grid-column-start: left-blocks;
+  grid-column-end: middle-space;
+  grid-row-start: work-block-1-start;
+  grid-row-end: work-block-1-end
 }
 
-#CIBC-square {
- background-image: linear-gradient(to top right, #DFE6F3, #FFFBFB);
+.two {
+  grid-column-start: right-blocks;
+  grid-column-end: right-margin;
+  grid-row-start: work-block-2-start;
+  grid-row-end: work-block-2-end;
 }
 
-#cibc-logo {
-  width: 170px;
+.three {
+  grid-column-start: left-blocks;
+  grid-column-end: middle-space;
+  grid-row-start: work-block-3-start;
+  grid-row-end: work-block-3-end;
 }
 
-#Veeva-square {
-  background-image: linear-gradient(to bottom right, #F8F8F8, #FFE6EB);
-  max-width: 100%;
+.four {
+  grid-column-start: right-blocks;
+  grid-column-end: right-margin;
+  grid-row-start: work-block-4-start;
+  grid-row-end: work-block-4-end;
 }
 
-#veeva-logo {
-  width: 300px;
-}
-
-#QTS-square {
-  background-image: linear-gradient(to bottom right, #EAF8F8, #F3EBEF);
-
-}
-
-#qts-logo {
-  width: 170px;
-}
-
-@media (max-width: 778px) {
-
-  .secondary-highlight, .intro-blurb {
-    font-size: 45px;
-  }
-
-  h2 {
-    font-size: 45px;
-  }
-
-  .work-square {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-
-  .container {
-    padding-left:8px;
-    padding-right: 8px;
-  }
-}
-
-@media (max-width: 350px) {
-  .secondary-highlight, .intro-blurb, .work-duration {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .nav-item {
-    font-size: 16px;
-    margin-right: 20px;
-  }
+.five {
+  grid-column-start: left-blocks;
+  grid-column-end: middle-space;
+  grid-row-start: work-block-5-start;
+  grid-row-end: work-block-5-end;
 }
