@@ -1,100 +1,70 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: [left-margin] 1fr
-                           [left-blocks] 420px
-                           [middle-space] 38px 
-                           [right-blocks] 420px 
-                           [right-margin] 1fr;
-    grid-template-rows: [chloe-pic-start] 135px 
-                        [intro-start] 130px 
-                        [intro-end] 75px 
-                        [work-block-1-start] 120px 
-                        [chloe-pic-end] 40px 
-                        [work-block-2-start] 120px 
-                        [work-block-1-end] 40px 
-                        [work-block-3-start] 120px 
-                        [work-block-2-end] 40px 
-                        [work-block-4-start] 120px 
-                        [work-block-3-end] 40px 
-                        [work-block-5-start] 120px 
-                        [work-block-4-end]160px  /* set this to 40px when adding a new block*/
-                        [work-block-5-end] 120px;
-    /* grid-template-areas: ". . . pic ."
-                         ". blurb . pic ."
-                         ". . . pic ."
-                         ". work-1 . pic ."
-                         ". work-1 . . ."
-                         ". work-1 . work-2 ."
-                         ". . . work-2 ."
-                         ". work-3 . work-2 ."
-                         ". work-3 . . ."
-                         ". work-3 . work-4 ."
-                         ". . . work-4 ."
-                         ". work-5 . work-4 ."
-                         ". work-5 . . . "
-                         ". work-5 . . ." */
+.row {
+  display: flex;
+}
 
+.left { 
+  flex: 1;
+}
+
+.right {
+  flex: 1;
 }
 
 nav {
-    height: 140px;
+  height: 140px;
+}
+
+.work {
+  height: 280px;
+  width: 420px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 180076;
+  box-shadow: 0 0 30px rgba(24, 0, 118, 0.1);
 }
 
 .chloe-pic {
-  grid-column-start: right-blocks;
-  grid-column-end: right-margin;
-  grid-row-start: chloe-pic-start;
-  grid-row-end: chloe-pic-end;
+  height: 455px;
   background-image: url(../img/chloe-pic.png);
   border-radius: 20px;
   background-position: center; 
   background-size: 100% auto
 }
 
+.margin-bottom-md {
+  margin-bottom: 40px;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 80px;
+}
+
+.margin-top-xlg {
+ margin-top: 120px
+}
+
 .intro {
-  grid-column-start: left-blocks;
-  grid-column-end: middle-space;
-  grid-row-start: intro-start;
-  grid-row-end: intro-end;
+  text-align: center;
 }
 
-.work {
-  border-radius: 30px;
-  box-shadow: 0px 0px 180076;
-  box-shadow: 0 0 30px rgba(24, 0, 118, 0.1)
+.main-title {
+  font-weight: bold;
+  color: rgb(24, 0, 118);
+  font-size: 48px;
 }
 
-.one {
-  grid-column-start: left-blocks;
-  grid-column-end: middle-space;
-  grid-row-start: work-block-1-start;
-  grid-row-end: work-block-1-end
+.subtext {
+  font-size: 18px;
+  color: rgb(24, 0, 118);
 }
 
-.two {
-  grid-column-start: right-blocks;
-  grid-column-end: right-margin;
-  grid-row-start: work-block-2-start;
-  grid-row-end: work-block-2-end;
+.title {
+  font-weight: bold;
+  color: rgb(24, 0, 118);
+  font-size: 18px;
+  margin-left: 10px;
 }
 
-.three {
-  grid-column-start: left-blocks;
-  grid-column-end: middle-space;
-  grid-row-start: work-block-3-start;
-  grid-row-end: work-block-3-end;
+img {
 }
 
-.four {
-  grid-column-start: right-blocks;
-  grid-column-end: right-margin;
-  grid-row-start: work-block-4-start;
-  grid-row-end: work-block-4-end;
-}
-
-.five {
-  grid-column-start: left-blocks;
-  grid-column-end: middle-space;
-  grid-row-start: work-block-5-start;
-  grid-row-end: work-block-5-end;
-}
+/* add extra margin to work blocks on xs screensize */

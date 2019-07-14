@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet">
     <!-- <link href="css/shapes.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
@@ -14,32 +15,50 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <!-- Header links [flexbox] -->
     <nav>
+      <a href="#">
+        Chloe Byun
+      </a>
+      <div>
+        <li>work</li>
+        <li>resume</li>
+        <li>contact</li>
+        <li>about</li>
+      </div>
 
     </nav>
-    <!-- Main content with grid parent container -->
-    <div class="grid-container">
-      <div class="chloe-pic"> </div>
-      <div class="intro">
-        <h1>Hi, I'm Chloe</h1>
-        <p>Passionate about product strategy <br />
-          and making the perfect cup of coffee</p>
-      </div>
-      <div class="work one">
-        <p>Frontend Engineer</p>
-      </div>
-      <div class="work two">
-        <p>Web Developer</p>
-      </div>
-      <div class="work three">
-        <p>Business Systems Analyst</p>
-      </div>
-      <div class="work four">
-        <p>QA Engineer</p>
-      </div>
-      <div class="work five">
-        <p>QA Engineer</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12 left">
+          <div class="intro col-xs-12 margin-bottom-lg margin-top-xlg ">
+            <h1 class="main-title">Hi, I'm Chloe 😊</h1>
+            <p class="subtext">Passionate about product strategy <br />
+              and making the perfect cup of coffee ☕️</p>
+          </div>
+          <div class="work one col-xs-12 margin-bottom-md">
+            <h2 class="title">Frontend Engineer</h2>
+            <img src="./img/carrot.png" alt="Carrot"/>
+          </div>
+          <div class="work three col-xs-12 margin-bottom-md">
+            <h2 class="title">Business Systems Analyst</h2>
+            <img src="./img/cibc.png" alt="CIBC"/>
+          </div>
+          <div class="work five col-xs-12 margin-bottom-md">
+            <h2 class="title">QA Engineer</h2>
+            <img src="./img/qts.png" alt="QTS"/>
+          </div>
+        </div>
+        <div class="col-md-6 right">
+          <div class="chloe-pic col-xs-12 margin-bottom-md"> </div>
+          <div class="work two col-xs-12 margin-bottom-md">
+              <h2 class="title">Web Developer</h2>
+              <img src="./img/empire.png" alt="Empire"/>
+          </div>
+          <div class="work four col-xs-12 margin-bottom-md">
+            <h2 class="title">QA Engineer</h2>
+            <img src="./img/veeva.png" alt="Veeva"/>
+          </div>
+        </div>
       </div>
     </div>
   </body>
