@@ -1,51 +1,130 @@
-h2 {
-  margin-bottom: 0;
+nav
+  ul
+    li:nth-child(4) {
+      position: absolute;
+      /* margin-left: 30px; */
+    }
+
+#role-and-date {
+  color: #333;
+  font-weight: 400;
 }
 
-p {
-  line-height: 135%;
+.black-font {
+  color: #333;
 }
 
-.work-duration {
-  float: right;
-  font-size: 35px;
+#work-ic-img {
+  width: 120px;
 }
 
-.go-back-home {
-  /* float: right; */
-  /* display: block; */
-  position: absolute;
+#work-empire-img {
+  margin-top: 0;
+  padding-top: 9px;
+}
+
+#work-cibc-img {
+  margin-top: 0;
+  padding-top: 14px;
+}
+
+#work-qt-img {
+  margin-top: 0;
+  width: 120px;
+}
+
+.home-icon {
+  width: 20px;
+  padding-left: 10px
+}
+
+.prev-work {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
   right: 0;
-  padding: 0;
-  bottom: 10px;
+  top: 40%;
 }
 
-.heading {
-  font-size: 28px;
-  margin-top: 10%;
-  margin-bottom: 30px;
-  font-weight: 900;
+.next-work {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  top: 40%;
 }
 
-.margin-bottom {
-  margin-bottom: 150px;
+.right-arrow {
+  height: 50px;
+  padding-right: 20px;
 }
 
-.container {
-  max-width: 850px;
+.left-arrow {
+  transform: rotate(180deg);
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
-.switching-pages {
-  font-weight: lighter;
-  font-size: 20px;
-  margin-top: 200px;
-  margin-bottom: 100px;
+.work-hover{
+  display: none
 }
 
-.next {
-  float: right;
+.next-work:hover .work-hover, .prev-work:hover .work-hover {
+  margin-top: 17px;
+  display: block;
 }
 
-.prev {
-  float: left;
+#chloe-jumping {
+  width: 400px;
+}
+
+.devo {
+  width: 70%;
+}
+
+.wide-devo {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #work-cibc-img {
+    padding-top: 27px;
+  }
+
+  .work-hover {
+    display: block;
+  }
+
+  .mobile-arrows {
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .prev-work {
+    position: absolute;
+  }
+
+  .next-work {
+    position: absolute;
+  }
+
+  .left-arrow, .right-arrow {
+    height: 30px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .next-work:hover .work-hover, .prev-work:hover .work-hover {
+    margin-top: 0px;
+    text-decoration: underline;
+  }
+
+  .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

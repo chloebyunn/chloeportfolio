@@ -3,63 +3,81 @@
     <title>Chloe Byun</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet">
-    <!-- <link href="css/shapes.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+    <link href="css/spacing.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body>
-    <nav>
-      <a href="#">
-        Chloe Byun
-      </a>
-      <div>
-        <li>work</li>
-        <li>resume</li>
-        <li>contact</li>
-        <li>about</li>
-      </div>
-
+  <body class="spacing-padding-bottom--xlg">
+    <nav class="container spacing-top--lg">
+      <ul>
+        <li><a href="Resume.pdf" target="_blank">resume</a></li>
+        <li><a href="mailto:chloebyunn@gmail.com">contact</a></li>
+        <li><a href="./about.html">about</a></li>
+        <!-- <li>Chloe Byun</li> -->
+      </ul>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-xs-12 left">
-          <div class="intro col-xs-12 margin-bottom-lg margin-top-xlg ">
-            <h1 class="main-title">Hi, I'm Chloe 😊</h1>
-            <p class="subtext">Passionate about product strategy <br />
-              and making the perfect cup of coffee ☕️</p>
-          </div>
-          <div class="work one col-xs-12 margin-bottom-md">
-            <h2 class="title">Frontend Engineer</h2>
-            <img src="./img/carrot.png" alt="Carrot"/>
-          </div>
-          <div class="work three col-xs-12 margin-bottom-md">
-            <h2 class="title">Business Systems Analyst</h2>
-            <img src="./img/cibc.png" alt="CIBC"/>
-          </div>
-          <div class="work five col-xs-12 margin-bottom-md">
-            <h2 class="title">QA Engineer</h2>
-            <img src="./img/qts.png" alt="QTS"/>
-          </div>
-        </div>
-        <div class="col-md-6 right">
-          <div class="chloe-pic col-xs-12 margin-bottom-md"> </div>
-          <div class="work two col-xs-12 margin-bottom-md">
-              <h2 class="title">Web Developer</h2>
-              <img src="./img/empire.png" alt="Empire"/>
-          </div>
-          <div class="work four col-xs-12 margin-bottom-md">
-            <h2 class="title">QA Engineer</h2>
-            <img src="./img/veeva.png" alt="Veeva"/>
-          </div>
-        </div>
+    <!-- Main content with grid parent container -->
+    <!-- <img class="background-icons" src="./img/background-icons.png" alt="Background visuals of icons"> -->
+    <div class="grid-container">
+      <div class="intro">
+          <h1 class="spacing-bottom--none">Hi, I'm Chloe 😊</h1>
+          <p class="spacing-top--small">Passionate about product strategy <br />
+              and making the perfect cup of coffee ☕</p>
       </div>
+      <div class="chloe-pic purple-backdrop-rounded"></div>
+      <a href="./instacart.html">
+        <div class="work purple-backdrop-rounded">
+            <div class="display-inline">
+                <h2 class="spacing-vertical--none">Instacart</h2>
+                <h3 class="work-tag tag spacing-vertical--none">Work</h3>
+            </div>
+            <h3 class="spacing-top--xsmall">Frontend Engineer Intern</h3>
+            <img class="instacart-img img" src="./img/instacart.png" alt="Instacart Logo"/>
+        </div>
+      </a>
+      <a href="./empire.html">
+        <div class="work purple-backdrop-rounded"">
+          <div class="display-inline">
+            <h2 class="spacing-vertical--none ">Empire Life</h2>
+            <h3 class="work-tag tag spacing-vertical--none"">Work</h3>
+          </div>
+          <h3 class="spacing-top--xsmall">Web Developer Intern</h3>
+          <img class="empire-img img" src="./img/empire.png" alt="Empire Logo" />
+        </div>
+      </a>
+      <a href="./cibc.html">
+        <div class="work purple-backdrop-rounded">
+          <div class="display-inline">
+            <h2 class="spacing-vertical--none">CIBC</h2>
+            <h3 class="work-tag tag spacing-vertical--none">Work</h3>
+          </div>    
+          <h3 class="spacing-top--xsmall">Business Systems Analyst Intern</h3>
+          <img class="cibc-img img" src="./img/cibc.png" alt="CIBC Logo" />
+        </div>
+        </a>
+        <!-- <div class="work">
+        <h2 class="spacing-vertical--none">Veeva</h2>
+        <h3 class="spacing-vertical--none">QA Engineer Intern</h3>
+        <img src="./img/veeva.png" alt="Veeva Logo" />
+      </div>
+      <div class="work">
+        <h2 class="spacing-vertical--none">QuickTapSurvey</h2>
+        <h3 class="spacing-vertical--none">QA Engineer Intern</h3>
+        <img src="./img/qts.png" alt="QTS Logo" />
+      </div> -->
+      <a href="./quiettime.html">
+        <div class="work purple-backdrop-rounded">
+          <div class="display-inline">
+            <h2 class="spacing-vertical--none">QuietTime</h2>
+            <h3 class="project-tag tag spacing-vertical--none">Project</h3>
+            </div>
+          <img class="devo-img img" src="./img/devo.png" alt="Devo Logo" />
+        </div>
+      </a>
     </div>
-  </body>
+  </div>
 </html>

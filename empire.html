@@ -1,82 +1,79 @@
 <html lang="en">
   <head>
-    <title>Empire</title>
+    <title>Instacart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/work.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="css/spacing.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-
   <body>
-    <div class="nav-container">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html">Work</a></li>
-            <li class="nav-item"><a href="./Resumev2.pdf">Resume</a></li>
-            <li class="nav-item"><a href="mailto:chloebyunn@gmail.com">Contact</a></li>
-            <li class="nav-item go-back-home">
-                <a href="index.html">
-                  return home
-                </a>
-            </li>
-        </ul>
-    </div>
+    <nav class="container spacing-top--lg">
+      <ul>
+        <li><a href="./Resume.pdf">resume</a></li>
+        <li><a href="mailto:chloebyunn@gmail.com">contact</a></li>
+        <li><a href="./about.html">about</a></li>
+        <!-- <li>Chloe Byun</li> -->
+      </ul>
+      <a href="index.html"><img class="home-icon" src="./img/home.png" alt="Go Home"/></a>
+    </nav>
+    <!-- main content -->
     <div class="container">
-      <div class="margin-bottom">
-        <h2 class="intro-blurb">
-            <div class="pink-color secondary-highlight">Web development intern</div> 
-            at Empire Life in Toronto, ON.
-        </h2>
-        <div class="work-duration grey-color">Sept - Dec 2018</div>
+        <div class="work-image">
+          <div class="square purple-backdrop-rounded ">
+            <img id="work-empire-img" class="img cenetered" src="./img/empire.png" alt="Instacart Logo"/>
+          </div>
+        </div>
+      <h1 class="workplace centered">Empire Life</h2>
+      <h3 id="role-and-date" class="role-and-date centered spacing-padding-bottom--xlg ">Web Developer Inter, Fall 2019</h3>
+      <h2>Work</h2>
+      <div class="spacing-padding-bottom--lg black-font">
+        My team and I succeeded in designing and prototyping two web projects.
+        <br />
+        <br />
+        For the first, our task was to design and develop a proof-of-concept (POC) of a health dashboard that would display a client’s daily health statistics in a convenient form, with data such as heart rate, blood pressure, total number of steps, and more. To effectively carry this initiative forward, we decided that displaying the data numerically and graphically to show general trends would be the most effective.
+        <br />
+        <br />
+        I was the lead designer during the prototyping phase and decided that while keeping the colours of branding consistent, I wanted to bring in a more modern and minimalistic feeling to the main page. Although this decision would deviate from the company’s existing web presence that emphasized the quantity of information delivery in a stacked-block display manner, it would be a good start to bringing in modern ideas to update the existing user-interface. 
+        <br />
+        <br />
+        During this time, I loved considering the different ways a client could interact with the landing page and effectively gauge their health data. A few important factors that I always considered is responsiveness and accessibility. Different screen sizes should consistently display the data and not hinder the information delivery process to the client. Also, since our company’s audience were heavily concentrated around the older age population, the elements of font-sizes, font-weights, colour contrasts, data cluttering, and data placement were heavily thought out to detail. After a sketch was finalized, I thought of and implemented the front-end architecture with ReactJS and flex boxes. 
+        <br />
+        <br />
+
+        Secondly, our whole team’s efforts were focused on a chat bot initiative that would replace the existing one. 
+        <br />
+        <br />
+
+        I was also the lead designer for this project and decided that, since this chatbot would be located everywhere on our web presence, I would only utilize the 2 main colours, besides alerts or notification counts. I eliminated the initial user experience that asked user information before being able to chat because this would discourage client-engagement rate since this extra layer may be unattractive to many who is seeking immediate help. This information can be retrieved with the client being authenticated into the portal with development efforts, thus without this layer, although clients are restricted from asking personal questions to the bot, they can receive the immediate help they need. I decided on further user interface and user experience interactions that matched the project objectives and our audience’s characteristics and changed gears to being a product manager for this effort. 
+        <br />
+        <br />
+        Since our team consisted of only 5 web developers, we lacked the resourcing of management talents. However, I took upon the challenge and drove the product to success. Defining the key performance indicators with my team and our manager, I explained the design choices to my team, divided the work into stories in JIRA, and also contributed in the development efforts as a front-end engineer. Working towards the minimal viable product, our team found success as we showcased our POC to upper management. 
+        <br />
+        <br />
+        In the end, this simple chatbot project turned into internal and external centralization of information, so that both customer service representatives and clients can access this product and exchange information with each other. 
+        I grew exponentially during this term by wearing different hats, interacting with various people, and caring for each project from beginning to end. I learned various development tools such as VueJS, Redux, DialogFlow, and Firestore. On the other hand, I further enhanced my skills for ReactJS, Git, Figma, and Jira. 
       </div>
-      <h2 class="heading grey-color">My Role</h2>
-      <p>At Empire Life, I was one of the core contributors in the Web Center Innovation Lab, where our team’s effort was focused on researching and implementing innovative ideas to enhance our product and reduce workload for our customers or colleagues. With a limited number of team members, I wore different hats throughout the term as developer, designer, and product manager. 
-        </p>
-      
-        <h2 class="heading grey-color">My Work</h2>
-        <p>My team and I succeeded in designing and prototyping two web projects. 
-          <br /><br />
-            For the first, our task was to design and develop a proof-of-concept (POC) of a health dashboard that would display a client’s daily health statistics in a convenient form, with data such as heart rate, blood pressure, total number of steps, and more. To effectively carry this initiative forward, we decided that displaying the data numerically and graphically to show general trends would be the most effective. 
-            <br />
-            <br />
-
-            I was the lead designer during the prototyping phase and decided that while keeping the colours of branding consistent, I wanted to bring in a more modern and minimalistic feeling to the main page. Although this decision would deviate from the company’s existing web presence that emphasized the quantity of information delivery in a stacked-block display manner, it would be a good start to bringing in modern ideas to update the existing user-interface. 
-            <br />
-            <br />
-
-            During this time, I loved considering the different ways a client could interact with the landing page and effectively gauge their health data. A few important factors that I always considered is responsiveness and accessibility. Different screen sizes should consistently display the data and not hinder the information delivery process to the client. Also, since our company’s audience were heavily concentrated around the older age population, the elements of font-sizes, font-weights, colour contrasts, data cluttering, and data placement were heavily thought out to detail. After a sketch was finalized, I thought of and implemented the front-end architecture with ReactJS and flex boxes. 
-            <br />
-            <br />
-
-            Secondly, our whole team’s efforts were focused on a chat bot initiative that would replace the existing one. 
-            <br />
-            <br />
-
-            I was also the lead designer for this project and decided that, since this chatbot would be located everywhere on our web presence, I would only utilize the 2 main colours, besides alerts or notification counts. I eliminated the initial user experience that asked user information before being able to chat because this would discourage client-engagement rate since this extra layer may be unattractive to many who is seeking immediate help. This information can be retrieved with the client being authenticated into the portal with development efforts, thus without this layer, although clients are restricted from asking personal questions to the bot, they can receive the immediate help they need. I decided on further user interface and user experience interactions that matched the project objectives and our audience’s characteristics and changed gears to being a product manager for this effort. 
-            <br />
-            <br />
-
-            Since our team consisted of only 5 web developers, we lacked the resourcing of management talents. However, I took upon the challenge and drove the product to success. Defining the key performance indicators with my team and our manager, I explained the design choices to my team, divided the work into stories in JIRA, and also contributed in the development efforts as a front-end engineer. Working towards the minimal viable product, our team found success as we showcased our POC to upper management. 
-            <br />
-            <br />
-
-            In the end, this simple chatbot project turned into internal and external centralization of information, so that both customer service representatives and clients can access this product and exchange information with each other. 
-            I grew exponentially during this term by wearing different hats, interacting with various people, and caring for each project from beginning to end. I learned various development tools such as VueJS, Redux, DialogFlow, and Firestore. On the other hand, I further enhanced my skills for ReactJS, Git, Figma, and Jira. 
-
-          </p>
-          <h2 class="heading grey-color">My Takeaway</h2>
-          <p>I’ve learned that businesses continue to thrive for innovation and I love supplying and building that. Whether as a developer, designer, or product manager, the love I found for product strategy is growing by the day. 
-            </p>
-
-    
-      <div class="switching-pages grey-color next"><a href="cibc.html">next ></a></div>
-
+      <h2>Takeaways</h2>
+      <div class="spacing-padding-bottom--lg black-font">
+          I’ve learned that businesses continue to thrive for innovation and I love supplying and building that. Whether as a developer, designer, or product manager, the love I found for product strategy is growing by the day. 
+      </div>
     </div>
-
+    <div class="mobile-arrows spacing-margin-bottom--lg">
+      <a class="prev-work" href="./cibc.html">
+        <div class="work-hover">CIBC</div>
+        <img src="img/right.png" alt="View CBIC Work" class="right-arrow" />
+      </a>
+      <a class="next-work" href="./instacart.html">
+        <img src="img/right.png" alt="View Instacart Work" class="left-arrow" />
+        <div class="work-hover">Instacart</div>
+      </a>
+    </div>
   </body>
 </html>
