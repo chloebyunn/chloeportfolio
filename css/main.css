@@ -1,19 +1,57 @@
-p, h1, h2, h3, li {
+p, h1, h2, h3, li, div {
   color: #180076;
   font-family: Rubik; 
 }
 
 h3 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1, h2 {
   font-weight: 500;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: #180076;
+}
+    
 h2 {
-  font-size: 18px;
+  font-size: 22px;
+}
+
+body {
+  background-image: url(../Icongroup.svg);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative
+}
+
+.square {
+  height: 120px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.purple-backdrop-rounded {
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 0 30px rgba(24, 0, 118, 0.1);
 }
 
 .spacing-bottom--none {
@@ -33,13 +71,6 @@ h2 {
   margin-bottom: 0;
 }
 
-nav {
-  max-width: 870px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-}
-
 nav ul {
   list-style: none;
 }
@@ -53,7 +84,7 @@ nav ul li{
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   grid-gap: 30px 30px;
   justify-content: center;
   max-width: 870px;
@@ -63,9 +94,32 @@ nav ul li{
 }
 
 .background-icons {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  top: 0;
 }
+
+.display-inline {
+  display: inline-flex;
+  align-self: baseline;
+}
+
+.work-tag {
+  background-color: #E83F6F;
+  
+}
+
+.tag {
+  color: white;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-left: 15px;
+  
+}
+
+.project-tag {
+  background-color: #41D3BD;
+}
+
 
 .intro {
   text-align: center;
@@ -102,28 +156,29 @@ nav ul li{
 
 .chloe-pic {
   background-image: url(../img/chloe-pic.png);
-  border-radius: 20px;
   background-position: center; 
   background-size: 100% auto;
   grid-row: 1/4;
   grid-column: 2;
-  box-shadow: 0 0 30px rgba(24, 0, 118, 0.1);
 }
 
 .work {
   display: block;
-  border-radius: 20px;
   height: 220px;
-  background: white;
-  box-shadow: 0 0 30px rgba(24, 0, 118, 0.1);
   padding: 30px;
+  transition: all .2s ease-in-out;
 }
 
-.grid-container div:nth-child(2n) {
+.work:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px rgba(24, 0, 118, 0.25);
+}
+
+.grid-container a:nth-child(2n) {
   grid-row-end: span 2;
 }
 
-.grid-container div:nth-child(2n+1) {
+.grid-container a:nth-child(2n+1) {
   grid-row-end: span 2;
 }
 
@@ -132,19 +187,50 @@ nav ul li{
   grid-row: 1 / 4;
 }
 
+.grid-container div:first-child {
+  grid-row-end: span 2;
+}
+
 nav {
-  height: 140px;
+  height: 110px;
+}
+
+nav ul li {
+  transition: all .2s ease-in-out;
+}
+
+nav ul li:hover{
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
+  nav ul li {
+    margin-left: 25px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px 30px;
     margin-left: 15px;
     margin-right: 15px;
+    grid-template-rows: repeat(6, 1fr);
   }
 
-  .grid-container div:nth-child(1) {
+  .grid-container div:first-child {
     grid-row-end: span 1;
   }
 
@@ -156,12 +242,13 @@ nav {
     margin-right: auto;
 }
 
-  .grid-container div:nth-child(n+3) {
+  .grid-container a:nth-child(2n+1),
+  .grid-container a:nth-child(2n) {
     grid-row-end: span 1;
-    height: 170px;
   }
   
   .work {
+    height: 170px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(24, 0, 118, 0.1);
   }
