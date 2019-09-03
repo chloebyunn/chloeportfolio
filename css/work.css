@@ -48,7 +48,7 @@ nav
 
 .next-work {
   display: flex;
-  flex-direction: row;
+flex-direction: row;
   position: fixed;
   left: 0;
   top: 40%;
